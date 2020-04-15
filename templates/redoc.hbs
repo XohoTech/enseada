@@ -1,4 +1,14 @@
-{{#> base title="API Documentation" }}
-    <redoc spec-url='{{spec_url}}'></redoc>
-    <script src="https://cdn.jsdelivr.net/npm/redoc/bundles/redoc.standalone.js"> </script>
-{{/base }}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Documentation | Enseada</title>
+    <script src="https://cdn.jsdelivr.net/npm/redoc/bundles/redoc.standalone.js" defer></script>
+</head>
+<body>
+<redoc spec-url='{{spec_url}}' show-extensions="true"></redoc>
+</body>
+</html>

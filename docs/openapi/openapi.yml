@@ -30,6 +30,7 @@ paths:
         - users
       summary: List registered users
       operationId: user::list
+      x-required-permissions: users:read
       security:
         - oauth:
             - users:read
@@ -57,6 +58,7 @@ paths:
         - users
       summary: Register a new user
       operationId: user::register
+      x-required-permissions: users:create
       security:
         - oauth:
             - users:manage
@@ -99,6 +101,7 @@ paths:
         - users
       summary: Fetch a single user details
       operationId: user::get
+      x-required-permissions: users:read
       security:
         - oauth:
             - users:read
@@ -118,6 +121,7 @@ paths:
         - users
       summary: Delete a user
       operationId: user::delete
+      x-required-permissions: users:delete
       security:
         - oauth:
             - users:manage
